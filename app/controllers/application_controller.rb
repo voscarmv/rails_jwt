@@ -1,5 +1,4 @@
-class ApplicationController < ActionController::API
-    # skip_before_action :verify_authenticity_token
+class ApplicationController < ActionController::Base
     def authenticate_user
         if request.headers['Authorization'].present?
             authenticate_or_request_with_http_token do |token|
