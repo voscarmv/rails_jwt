@@ -3,26 +3,25 @@ class SessionsController < Devise::SessionsController
     private
     def respond_with(resource, _opts = {})
         if !resource.id.nil?
-        render json: resource
+            render json: resource
         else
         render json: {
             status: 401,
-            message: "Please check your credentials and try again."
+            message: "Bad credentials."
         }, status: :unauthorized
         end
-        # render json: resource
     end 
     def respond_to_on_destroy
         if current_user
-        render json: {
-            status: 200,
-            message: "logged out successfully"
-        }, status: :ok
+            render json: {
+                status: 200,
+                message: "Logged out."
+            }, status: :ok
         else
-        render json: {
-            status: 401,
-            message: "Couldn't find an active session."
-        }, status: :unauthorized
+            render json: {
+                status: 401,
+                message: "No active session."
+            }, status: :unauthorized
         end
     end
 end
