@@ -3,9 +3,9 @@
 Remember to...
 
 ```
-$ cd $REPO
+$ cd rails_jwt
 $ bundler
 $ echo "jwt_secret: `rails secret`"    # ...copy the output of this
-$ EDITOR=gedit rails credentials:edit  # and paste it here.
+$ EDITOR=nano rails credentials:edit  # and paste it here.
 ```
 
