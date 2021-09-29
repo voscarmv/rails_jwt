@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  binary: 
+  boolean: false
+  date: 2021-09-29
+  datetime: 2021-09-29 01:23:36
+  decimal: 9.99
+  float: 1.5
+  integer: 1
+  string: MyString
+  text: MyText
+  time: 2021-09-29 01:23:36
+  timestamp: 2021-09-29 01:23:36
+
+two:
+  binary: 
+  boolean: false
+  date: 2021-09-29
+  datetime: 2021-09-29 01:23:36
+  decimal: 9.99
+  float: 1.5
+  integer: 1
+  string: MyString
+  text: MyText
+  time: 2021-09-29 01:23:36
+  timestamp: 2021-09-29 01:23:36
